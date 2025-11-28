@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 body {
     margin: 0;
     background-color: #ffd230;
@@ -12,7 +14,7 @@ body {
 }
 
 .titulo, h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 70pt;
     margin-top: 0;
     margin-bottom: 0;
@@ -47,7 +49,7 @@ body {
 
 .navegacao, a {
     text-decoration: none;
-    font-family:'Times New Roman', Times, serif;
+    font-family: "Ubuntu", sans-serif;
     color: #000000;
 }
 
@@ -82,3 +84,124 @@ body {
     margin-right: 230px;
 }
 
+.secao_sobre {
+    display: flex;
+    justify-content: center;      /* Centraliza tudo */
+    align-items: center;          /* Alinha verticalmente */
+    gap: 60px;                    /* Espaço entre imagem e texto */
+    padding: 70px 0;              /* Espaço interno vertical */
+    background-color: #ffffff;
+    margin-top: 100px;
+}
+
+.secao_sobre img {
+    border-radius: 25px;
+}
+
+.secao_sobre h2 {
+    margin-bottom: 15px;
+    font-size: 60px;
+}
+
+.sobre_nos p {
+    font-size: 30px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.secao_sobre_secundaria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    gap: 60px;                   
+    padding: 70px 0; 
+}
+
+.secao_sobre_secundaria .div_sobre2 {
+    width: 600px;
+    height: 460px;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+.secao_sobre_secundaria h2 {
+    margin-bottom: 15px;
+    font-size: 60px;
+}
+
+.secao_sobre_secundaria p {
+    font-size: 30px;
+}
+
+.div_sobre2 .div_destaque {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.div_destaque .destaque1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    color: #ffffff;
+}
+
+.div_sobre2 h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.div_sobre2 p {
+    font-size: 14px;
+}
+
+.div_destaque .destaque2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    color: #ffffff;
+}
+
+.div_destaque .destaque3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #ffffff;
+}
+
+.menu .menu_item1 {
+    width: 200px;
+    height: 400px;
+    background-image: url("/assets/images/pizzamargherita.png");
+}
+
+.menu .menu_item2 {
+    width: 200px;
+    height: 400px;
+    background-image: url("/assets/images/pizzacalabresa.png");
+}
+
+.menu .menu_item3 {
+    width: 200px;
+    height: 400px;
+    background-image: url("/assets/images/pizzafrango.png");
+}
