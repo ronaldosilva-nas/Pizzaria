@@ -21,7 +21,7 @@
                 <a href="#">RESERVE UMA MESA</a>
             </div>
             <div class="divisao2">
-                <a href="#">NOSSO CARDÁPIO</a>
+                <a href="#secao_menu">NOSSO CARDÁPIO</a>
             </div>
             <div class="divisao3">
                 <a href="#sobre">SOBRE NÓS</a>
@@ -83,21 +83,87 @@
         </div>
     </section>
 
-    <section class="menu">
-        <div>
-            <div>
-                <div><h2>Nosso<br>Cardápio</h2></div>
-                <div class="menu_item1">
-                    
-                </div>
-                <div class="menu_item2">
+    <section id="secao_menu" class="menu">
+        <h2>Nosso Cardápio:</h2>
 
+        <div class="menu_items">
+            <div class="menu_item menu_item1">
+                <div class="descricao descricao_1">
+                    <p> <strong>Margherita</strong><br>
+                        Simplicidade que abraça: molho de tomate artesanal,
+                        mussarela fresquinha e manjericão colhido no dia.
+                        Um clássico que agrada toda a família.
+                    </p>
                 </div>
-                <div class="menu_item3">
-
+            </div>
+            <div class="menu_item menu_item2">
+                <div class="descricao descricao_2">
+                    <p> <strong>Calabresa</strong><br>
+                        Sabor de casa: fatias generosas de calabresa, 
+                        cebola levemente dourada e um toque de orégano. 
+                        Combinação perfeita para qualquer ocasião.
+                    </p>
+                </div>
+            </div>
+            <div class="menu_item menu_item3">
+                <div class="descricao descricao_3">
+                    <p> <strong>Frango</strong><br>
+                        Conforto a cada pedaço: frango desfiado 
+                        temperado na medida certa, cremoso catupiry 
+                        original e queijo derretido por cima.
+                    </p>
+                </div>
+            </div>
+            <div class="menu_item menu_item4">
+                <div class="descricao descricao_4">
+                    <p> <strong>Portuguesa</strong><br>
+                        Clássico de família: presunto, ovos, cebola, 
+                        azeitonas e pimentão — tudo equilibrado com nosso 
+                        molho especial.
+                    </p>
+                </div>
+            </div>
+            <div class="menu_item menu_item5">
+                <div class="descricao descricao_5">
+                    <p> <strong>Quatro queijo</strong><br>
+                        Para os amantes de queijo: mussarela, provolone, 
+                        parmesão e gorgonzola em uma harmonia que 
+                        derrete no coração.
+                    </p>
+                </div>
+            </div>
+            <div class="menu_item menu_item6">
+                <div class="descricao descricao_6">
+                    <p> <strong>Bacon</strong><br>
+                        Irresistível: bacon crocante, cheddar cremoso e 
+                        mussarela formando uma pizza rica, 
+                        marcante e perfeita para dividir.
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="contato" class="secao_contato">
+        <h1>Faça sua reserva</h1>
+        <div class="enviar_mensagem">
+            <h2>Enviar mensagem</h2>
+            <form id="formulario" action="https://formspree.io/f/meokqggw" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea name="message" id="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <!-- Div para mostrar mensagem de confirmação -->
+            <div id="statusMensagem" class="mensagem_status" style="display:none;"></div>
+        </div>
+            
+    </section>
+
 </body>
 </html>

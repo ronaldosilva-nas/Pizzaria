@@ -182,26 +182,114 @@ body {
 
 .menu {
     display: flex;
-    align-items: center;
+    flex-direction: column;  /* deixa o título em cima e pizzas embaixo */
+    align-items: center;     /* centraliza tudo horizontalmente */
     justify-content: center;
-    gap: 20px;
     background-color: #ffffff;
+    padding: 60px 0;
+    gap: 40px;               /* espaço entre o título e as pizzas */
 }
 
-.menu .menu_item1 {
+.menu h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 50px;
+}
+
+.menu_items {
+    display: flex;
+    gap: 20px;            /* espaço entre as pizzas */
+}
+
+.menu_item {
     width: 200px;
     height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.menu_item1 {
     background-image: url("/assets/images/pizzamargherita.png");
 }
 
-.menu .menu_item2 {
-    width: 200px;
-    height: 400px;
+.menu_item2 {
     background-image: url("/assets/images/pizzacalabresa.png");
 }
 
-.menu .menu_item3 {
-    width: 200px;
-    height: 400px;
+.menu_item3 {
     background-image: url("/assets/images/pizzafrango.png");
+}
+
+.menu_item4 {
+    background-image: url("/assets/images/pizzaportuguesa.png");
+}
+.menu_item5 {
+    background-image: url("/assets/images/pizzaquatroqueijo.png");
+}
+.menu_item6 {
+    background-image: url("/assets/images/pizzabacon.png");
+}
+
+.descricao {
+    width: 200px;
+    height: 120px;
+    background-color: #ffd230;
+    border-radius: 15px;
+}
+
+.descricao p {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+}
+
+.secao_contato {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao_contato h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.enviar_mensagem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: #ffffff solid 2px;
+    width: 500px;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 20px;
+}  
+
+.secao_contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.secao_contato label {
+    width: 400px;
+}
+
+.secao_contato input {
+    border: none;
+    height: 25px;
+}
+
+.secao_contato textarea {
+    border: none;
+}
+
+.secao_contato button {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 25px;
+    background-color: #ffffff;
+    border: none;
+    font-family: "Ubuntu", sans-serif;
 }
