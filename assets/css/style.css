@@ -186,12 +186,12 @@ body {
 /* Estiliza seção menu */
 .menu {
     display: flex;
-    flex-direction: column;  /* deixa o título em cima e pizzas embaixo */
-    align-items: center;     /* centraliza tudo horizontalmente */
+    flex-direction: column;  
+    align-items: center;     
     justify-content: center;
     background-color: #ffffff;
     padding: 60px 0;
-    gap: 40px;               /* espaço entre o título e as pizzas */
+    gap: 40px;               
 }
 
 .menu h2 {
@@ -201,7 +201,7 @@ body {
 
 .menu_items {
     display: flex;
-    gap: 20px;            /* espaço entre as pizzas */
+    gap: 20px;            
 }
 
 .menu_item {
